@@ -1,0 +1,127 @@
+header .container {
+    margin-top: 10px;
+}
+
+.nav-link {
+    color: #000000;
+}
+
+.greeting {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.btn-lg {
+    margin-top: 12px;
+}
+
+.comment {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.greeting, h3, .intro {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+h3, form, footer {
+    margin-top: 85px;
+}
+
+.card-deck {
+    margin-top: 40px;
+}
+
+.intro {
+    font-weight: 100;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+h3, h4 {
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.description {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.image-link {
+    display: inline-block;
+    height: 93px;
+    width: 93px;
+    background: url("../images/social-networks.png") 0 0 no-repeat;
+    margin: 12px 8px 0px 8px;
+}
+
+.skype {
+    background-position: -367px -365px;
+}
+
+.viber {
+    background-position: 0px -365px;
+}
+
+.telegram {
+    background-position: -244px -365px;
+}
+
+.gmail {
+    background-position: -488px 0px;
+}
+
+.vk {
+    background-position: -122px 0px;
+}
+
+.inst {
+    background-position: -607px 0px;
+}
+
+form {
+    border: 3px solid #6c757d;
+    padding: 20px;
+}
+
+form .description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer .nav-link {
+    text-align: center;
+}
+
+@media screen and (min-width: 875px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    .comment {
+        font-size: 16px;
+    }
+}
