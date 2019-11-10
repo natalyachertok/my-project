@@ -2,6 +2,7 @@ header .container {
     margin-top: 10px;
 }
 
+
 .nav-link {
     color: #000000;
 }
@@ -120,6 +121,12 @@ footer, #address {
     text-align: center;
 }
 
+@media screen and (min-width: 575px) {
+    .card-deck .card {
+        margin-bottom: 15px;
+    }
+}
+
 @media screen and (min-width: 875px) {
     h1 {
         font-size: 60px;
@@ -139,6 +146,12 @@ footer, #address {
         margin-top: 85px;
     }
 
+    ul {
+        position: fixed;
+        z-index: 1;
+        background: #ffffff;
+    }
+
     #address {
         margin-top: 0;
         text-align: left;
@@ -148,4 +161,15 @@ footer, #address {
         margin-bottom: 0;
     }
 
+    #hm {
+        margin-top: 8px;
+    }
+
+    #waikiki {
+        margin-top: 18px;
+    }
+
+    #mango {
+        margin-top: 17px;
+    }
 }
