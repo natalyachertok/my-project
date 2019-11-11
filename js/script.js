@@ -23,7 +23,19 @@ function removeElement(el, timeout = 1500) {
         el.remove();
     }, timeout)
 }
+const toastMessage = document.getElementById('toast-message');
 
+for (let item of document.querySelectorAll('.form-control')) {
+
+    item.addEventListener('focus', ()=> {
+        toastMessage.innerHTML = item.dataset.rule;
+        toastMessage.style.opacity = '1';
+    });
+
+    item.addEventListener('focusout', ()=> {
+        toastMessage.style.opacity = '0';
+    });
+}
 
 
 
