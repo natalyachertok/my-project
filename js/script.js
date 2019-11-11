@@ -13,27 +13,15 @@ form.addEventListener('submit', (event) => {
 function addSuccessMsg() {
     let el = document.createElement('div');
     el.innerHTML = 'Data was saved. Thank you!';
-    el.className = 'alert alert-success';
+    el.className = 'alert alert-dark';
     form.after(el);
-    removeElement(el, 5000);
+    removeElement(el, 1500);
 }
-function removeElement(el, timeout = 3000) {
+
+function removeElement(el, timeout = 1500) {
     setTimeout(() => {
         el.remove();
     }, timeout)
-}
-const toastMessage = document.getElementById('toast-message');
-
-for (let item of document.querySelectorAll('.form-control')) {
-
-    item.addEventListener('focus', ()=> {
-        toastMessage.innerHTML = item.dataset.rule;
-        toastMessage.style.opacity = '1';
-    });
-
-    item.addEventListener('focusout', ()=> {
-        toastMessage.style.opacity = '0';
-    });
 }
 
 
