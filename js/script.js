@@ -1,4 +1,5 @@
 const form = document.getElementById('buy');
+console.log(form);
 const userInput = {};
 form.addEventListener('submit', (event) => {
     userInput.name = form[0].value;
@@ -12,7 +13,7 @@ form.addEventListener('submit', (event) => {
 
 function addSuccessMsg() {
     let el = document.createElement('div');
-    el.innerHTML = 'Data was saved. Thank you!';
+    el.innerHTML = 'Спасибо за заявку! Мы с вами свяжемся в течение 30 минут.';
     el.className = 'alert alert-dark';
     form.after(el);
     removeElement(el, 1500);

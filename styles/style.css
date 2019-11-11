@@ -117,6 +117,10 @@ form .description {
     margin-bottom: 10px;
 }
 
+.alert-dark {
+    margin-top: 10px;
+}
+
 footer, #address {
     text-align: center;
 }
